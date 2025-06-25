@@ -1,0 +1,27 @@
+{
+  "name": "SDN Python Dev",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "eamodio.gitlens",
+        "github.vscode-pull-request-github"
+      ],
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "python.pythonPath": "/usr/local/bin/python3"
+      }
+    }
+  },
+  "forwardPorts": [],
+  "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt || true",
+  "remoteUser": "vscode"
+}
+// This file is used to define the development container configuration for Visual Studio Code.
+// It specifies the name, build configuration, settings, extensions, and post-creation commands for the container.
+// The container is set up to use Python, with specific extensions for Python development and Git integration.
+// The postCreateCommand ensures that pip is upgraded and the required packages are installed from requirements.txt

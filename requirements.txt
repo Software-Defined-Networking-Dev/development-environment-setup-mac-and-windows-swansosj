@@ -1,0 +1,5 @@
+netmiko
+ntc-templates
+pyyaml
+requests
+textfsm
