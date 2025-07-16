@@ -19,8 +19,8 @@ jobs:
       with:
         test-name: Hello Message Test
         setup-command: ''
-        command: cat
-        input: hello_message.txt
+        command: cat hello_message.txt
+        input: ''
         expected-output: Hello from my Dev Container
         comparison-method: contains
         timeout: 10
